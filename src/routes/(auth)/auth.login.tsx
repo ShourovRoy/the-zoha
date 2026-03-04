@@ -90,6 +90,8 @@ function RouteComponent() {
         },
       })
 
+      console.log(errorMessage, message, value)
+
       if (message) {
         toast.success(message)
         queryClient.invalidateQueries({ queryKey: ['cart'] })
