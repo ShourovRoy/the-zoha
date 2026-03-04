@@ -11,7 +11,17 @@ import { nitro } from 'nitro/vite'
 const config = defineConfig({
   plugins: [
     devtools(),
-    nitro({ preset: 'bun', rollupConfig: { external: [/^@sentry\//] } }),
+
+    nitro({
+      vercel: {
+        functions: {
+          runtime: 'bun1.x',
+        },
+      },
+
+      rollupConfig: { external: [/^@sentry\//] },
+    }),
+    // nitro({ preset: 'bun', rollupConfig: { external: [/^@sentry\//] } }),
     tsconfigPaths({ projects: ['./tsconfig.json'] }),
     tailwindcss(),
     tanstackStart(),
