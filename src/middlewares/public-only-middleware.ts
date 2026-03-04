@@ -1,6 +1,6 @@
 import { createMiddleware } from '@tanstack/react-start'
 import { redirect } from '@tanstack/react-router'
-import { getCurrentUser } from '@/utils/auth-utils.server'
+import { getCurrentUser } from '@/utils/auth-utils'
 
 export const publicOnlyMiddleware = createMiddleware({
   type: 'function',

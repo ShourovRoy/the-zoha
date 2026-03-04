@@ -1,4 +1,4 @@
-import { checkAdminUserAuth } from '@/utils/auth-utils.server'
+import { checkAdminUserAuth } from '@/utils/auth-utils'
 import { createFileRoute, Outlet } from '@tanstack/react-router'
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
 import { AppSidebar } from '@/components/app-sidebar'

@@ -1,4 +1,4 @@
-import { getAllCategoriesFn } from '@/utils/category-utils.server'
+import { getAllCategoriesFn } from '@/utils/category-utils'
 import { useForm } from '@tanstack/react-form'
 import {
   Select,
@@ -18,7 +18,7 @@ import { z } from 'zod'
 import { createServerFn, useServerFn } from '@tanstack/react-start'
 import { adminMiddleware } from '@/middlewares/admin-only-middleware'
 import { toast } from 'sonner'
-import { createPresignedUrlWithClient } from '@/utils/media-uploader-utils.server'
+import { createPresignedUrlWithClient } from '@/utils/media-uploader-utils'
 import { productsTable } from '@/db/schema/products'
 import { db } from '@/db'
 import { categoriesTable } from '@/db/schema'

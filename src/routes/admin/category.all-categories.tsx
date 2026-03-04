@@ -14,7 +14,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination'
-import { getAllCategoriesFn } from '@/utils/category-utils.server'
+import { getAllCategoriesFn } from '@/utils/category-utils'
 
 import { createFileRoute, Link } from '@tanstack/react-router'
 

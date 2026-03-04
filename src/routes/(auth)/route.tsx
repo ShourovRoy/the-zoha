@@ -1,4 +1,4 @@
-import { getCurrentUser } from '@/utils/auth-utils.server'
+import { getCurrentUser } from '@/utils/auth-utils'
 import { createFileRoute, Outlet, redirect } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/(auth)')({

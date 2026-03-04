@@ -13,8 +13,8 @@ export const createPresignedUrlWithClient = ({
   const client = new S3Client({
     region,
     credentials: {
-      accessKeyId: process.env.AWS_ACCESS_KEY!,
-      secretAccessKey: process.env.AWS_SECRET_KEY!,
+      accessKeyId: process.env.APP_AWS_ACCESS_KEY!,
+      secretAccessKey: process.env.APP_AWS_SECRET_KEY!,
     },
   })
   const command = new PutObjectCommand({ Bucket: bucket, Key: key })

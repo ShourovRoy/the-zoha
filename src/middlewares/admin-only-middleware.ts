@@ -1,6 +1,6 @@
 import { createMiddleware } from '@tanstack/react-start'
 import { redirect } from '@tanstack/react-router'
-import { checkAdminUserAuth } from '@/utils/auth-utils.server'
+import { checkAdminUserAuth } from '@/utils/auth-utils'
 
 export const adminMiddleware = createMiddleware({ type: 'function' }).server(
   async ({ next }) => {

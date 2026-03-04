@@ -16,7 +16,7 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination'
 import { addToCartFn } from '@/utils/cart-utils'
-import { getProductsFn } from '@/utils/products-utils.server'
+import { getProductsFn } from '@/utils/products-utils'
 import { useQueryClient } from '@tanstack/react-query'
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useServerFn } from '@tanstack/react-start'

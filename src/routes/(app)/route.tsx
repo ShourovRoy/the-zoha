@@ -1,5 +1,5 @@
 import GlobalNavbar from '@/components/navbars/global-navbar'
-import { getCurrentUser } from '@/utils/auth-utils.server'
+import { getCurrentUser } from '@/utils/auth-utils'
 import { createFileRoute, Outlet } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/(app)')({
