@@ -6,11 +6,11 @@
     "#/*": "./src/*"
   },
   "scripts": {
-    "dev": "bun --bun vite dev --port 3000",
-    "build": "bun --bun vite build",
-    "preview": "bun --bun vite preview",
-    "gendb": "bunx --bun drizzle-kit generate",
-    "pushdb": "bunx --bun drizzle-kit migrate",
+    "dev": "vite dev --port 3000",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gendb": "npx drizzle-kit generate",
+    "pushdb": "npxdrizzle-kit migrate",
     "test": "vitest run",
     "lint": "eslint",
     "format": "prettier --check .",
