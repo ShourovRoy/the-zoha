@@ -34,6 +34,7 @@ const config = defineConfig({
   ssr: {
     external: ['argon2'],
   },
+  nitro: {},
 })
 
 export default config
