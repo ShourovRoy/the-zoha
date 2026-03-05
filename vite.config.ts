@@ -15,7 +15,7 @@ const config = defineConfig({
     nitro({
       vercel: {
         functions: {
-          runtime: 'bun1.x',
+          runtime: 'nodejs20.x',
         },
       },
 
