@@ -19,15 +19,10 @@ const config = defineConfig({
     tailwindcss(),
     tanstackStart(),
     viteReact(),
+
   ],
-  build: {
-    rollupOptions: {
-      external: ['argon2'],
-    },
-  },
-  ssr: {
-    external: ['argon2'],
-  },
+  build: {},
+  ssr: {},
   nitro: {},
 })
 
