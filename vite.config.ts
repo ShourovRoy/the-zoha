@@ -13,12 +13,6 @@ const config = defineConfig({
     devtools(),
 
     nitro({
-      vercel: {
-        functions: {
-          runtime: 'nodejs20.x',
-        },
-      },
-
       rollupConfig: { external: [/^@sentry\//] },
     }),
     tsconfigPaths({ projects: ['./tsconfig.json'] }),
